@@ -10,7 +10,7 @@ public class Button : MonoBehaviour
     public bool active = false;        // Player clock active
 
     private Image image;
-    private float timerValue = 3;
+    private float timerValue = 90;
 
     // Start is called before the first frame update
     void Start()
@@ -65,7 +65,7 @@ public class Button : MonoBehaviour
     }
 
 
-    void setDisabled()
+    public void setDisabled()
     {
         image.color = Color.grey;
         active = false;

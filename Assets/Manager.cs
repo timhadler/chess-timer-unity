@@ -1,4 +1,5 @@
-﻿using TMPro;
+﻿using Microsoft.Unity.VisualStudio.Editor;
+using TMPro;
 using UnityEngine;
 using UnityEngine.XR.WSA.Input;
 
@@ -8,6 +9,8 @@ public class Manager : MonoBehaviour
     public GameObject player_1;
     public GameObject player_2;
     public TMP_Text startPauseText;
+    public GameObject playSymbol;
+    public GameObject pauseSymbol;
 
     private bool gameHasStarted = false;
     private Button playerScript_1;
@@ -20,17 +23,31 @@ public class Manager : MonoBehaviour
         playerScript_2 = player_2.GetComponent<Button>();
     }
 
+
+    /* Move timer function from Button to Manager 
+       Move playPause button stuff to new playButton script
+       Disable active players button when pause is hit*/
+
+
     public void StartPause()
     {
         if (gameActive)
         {
-            startPauseText.text = "Start";
+            //startPauseText.text = "Start";
+            //char c = '\u23F8';
+            //startPauseText.text = c.ToString();
+            pauseSymbol.SetActive(false);
+            playSymbol.SetActive(true);
             gameActive = false;
+
         }
         else
         {
-            startPauseText.text = "Pause";
+            //startPauseText.text = "Pause";
+            playSymbol.SetActive(false);
+            pauseSymbol.SetActive(true);
             gameActive = true;
+
 
             if (!gameHasStarted)
             {
