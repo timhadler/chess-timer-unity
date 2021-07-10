@@ -7,17 +7,18 @@ public class Button : MonoBehaviour
     public Manager managerScript;
     public TMP_Text timerText;
     public Color activeColor;
-    public bool active = false;        // Player clock active
+    public bool active = false;        // Player clock active, public so the manager script knows if a button press is valid or not (players turn)
 
     private Image image;
-    private float timerValue = 90;
+    [SerializeField]
+    private float timerValue;
+    private int bonus;
 
     // Start is called before the first frame update
     void Start()
     {
         image = GetComponent<Image>();
         image.color = Color.grey;
-        DisplayTimer(timerValue);
     }
 
     // Update is called once per frame
@@ -41,14 +42,27 @@ public class Button : MonoBehaviour
     }
 
 
+    public void setMins(float _mins)
+    {
+        timerValue = _mins;
+
+        DisplayTimer(timerValue);
+    }
+
+    public void setBonusTime(int _bonus)
+    {
+        bonus = _bonus;
+    }
+
     public void ToggleActive()
     {
         if (managerScript.gameActive)
         {
             if (active)
             {
+                timerValue += bonus;
+                DisplayTimer(timerValue);
                 setDisabled();
-
             }
             else
             {
