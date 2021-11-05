@@ -24,6 +24,9 @@ public class Manager : MonoBehaviour
     {
         playerScript_1 = player_1.GetComponent<Button>();
         playerScript_2 = player_2.GetComponent<Button>();
+
+        // Prevent screen from turning off
+        Screen.sleepTimeout = SleepTimeout.NeverSleep;
     }
 
 

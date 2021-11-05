@@ -20,8 +20,6 @@ ScriptsOnlyBuild:
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
     - TMPro.TextMeshProUGUI
-    Unity.Timeline.Editor.dll:
-    - TimelinePreferences
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -59,43 +57,43 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11854}
+      Script: {instanceID: 11848}
     - Class: 114
-      Script: {instanceID: 11928}
+      Script: {instanceID: 11922}
     - Class: 114
-      Script: {instanceID: 12164}
+      Script: {instanceID: 12158}
     - Class: 114
-      Script: {instanceID: 12214}
+      Script: {instanceID: 12208}
     - Class: 114
-      Script: {instanceID: 12706}
+      Script: {instanceID: 12698}
     - Class: 114
-      Script: {instanceID: 12746}
+      Script: {instanceID: 12738}
     - Class: 114
-      Script: {instanceID: 12928}
+      Script: {instanceID: 12920}
     - Class: 114
-      Script: {instanceID: 12986}
+      Script: {instanceID: 12978}
     - Class: 114
-      Script: {instanceID: 13314}
+      Script: {instanceID: 13304}
     - Class: 114
-      Script: {instanceID: 13706}
+      Script: {instanceID: 13696}
     - Class: 114
-      Script: {instanceID: 13746}
+      Script: {instanceID: 13736}
     - Class: 114
-      Script: {instanceID: 13900}
+      Script: {instanceID: 13890}
     - Class: 114
-      Script: {instanceID: 14080}
+      Script: {instanceID: 14070}
     - Class: 114
-      Script: {instanceID: 14100}
+      Script: {instanceID: 14090}
     - Class: 114
-      Script: {instanceID: 14420}
+      Script: {instanceID: 14410}
     - Class: 114
-      Script: {instanceID: 14524}
+      Script: {instanceID: 14514}
     - Class: 114
-      Script: {instanceID: 14818}
+      Script: {instanceID: 14808}
     - Class: 114
-      Script: {instanceID: 15160}
+      Script: {instanceID: 15150}
     - Class: 114
-      Script: {instanceID: 15182}
+      Script: {instanceID: 15172}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
