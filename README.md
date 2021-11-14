@@ -1,6 +1,6 @@
 # chess-timer-unity
 
-This is a simple UI game to implement time control for a game of chess. 
+This is a simple UI game to implement time control for a game of chess. Allows you to select from a given list how long each player has for the game, and allows for bonus time. 
 
 
 
