@@ -1,9 +1,3 @@
-# chess-timer-unity
-
-This is a simple application that implements time control for a game of chess. Allows you to select from a given list how long each player has for the game, and allows for bonus time. 
-
-Hitting the active (orange) clock stops the clock and activates the opponents for their turn. Can pause and reset the timer, or exit and change the timer settings. 
-
 # Chess Timer - Android App
 
 A clean, intuitive chess timer application built for Android devices using Unity and C#.
